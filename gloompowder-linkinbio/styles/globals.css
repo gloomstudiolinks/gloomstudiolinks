@@ -3,9 +3,7 @@
   margin:0;
   font-family: poppins;
 }
-a:-webkit-any-link 
-{text-decoration: none;
-color:black}
+
 .h3{
   display: block;
   text-align: center;
@@ -28,6 +26,7 @@ padding: 5%;
   justify-content: center;
   border-radius: 10px;
   margin: auto;
+  margin-top: 1rem;
   width: fit-content;
   vertical-align: center;
   filter: drop-shadow(10px 10px 10px #b1b5ff);
@@ -64,7 +63,7 @@ padding: 5%;
 
 .links >a{
   display: block;
-  padding: 5px 4rem;
+  padding: .8rem 4rem;
   margin: .75rem 1rem;
   text-align: center;
   transition: .3s ease-in-out;
@@ -92,4 +91,55 @@ padding: 5%;
   transform: scale(1.15);
   margin-top: 1rem;
   transition: .3s;
+}
+
+.back-button{  
+  color:white;
+  background-color: #4852ff;
+  padding:.5rem 1rem;
+  border-style: none;
+  font-size: medium;
+  border: 1px solid white;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+.back-button:hover{
+  background-color: white;
+  border: .5rem 1px solid #4852ff;
+  color:#4852ff;
+  font-size: medium;
+  border: 1px solid #4852ff;
+}
+
+.buttons{
+  display: flex;
+}
+
+.submit-button{
+  text-decoration: none;
+  color:white;
+  background-color: #4852ff;
+  padding:.5rem 1rem;
+  border-style: none;
+  font-size: medium;
+  border: 1px solid white;
+  transition: .3s ease-in-out;
+  align-self: flex-end;
+}
+
+.submit-button:hover{
+  color:#4852ff;
+  background-color: white;
+  border: 1px solid #4852ff;
+}
+.honey{
+  display:none;
+}
+h4{text-align: center;}
+.form-control{
+  margin:.25rem .5rem;
+  padding:.4rem;
+  border-radius: 5px;
+  border: 1px solid #4852ff;
 }

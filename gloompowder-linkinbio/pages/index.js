@@ -38,7 +38,7 @@ export default function Home() {
           <a href="https://redbubble.com/shop/gloompowder" target="_blank" rel="noreferer">
             view merch
           </a>
-          <a href="contact" target = "_blank" rel="noreferer">
+          <a href="contact" target = "_self" >
             contact
           </a>
           </div>
