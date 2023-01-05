@@ -3,3 +3,93 @@
   margin:0;
   font-family: poppins;
 }
+a:-webkit-any-link 
+{text-decoration: none;
+color:black}
+.h3{
+  display: block;
+  text-align: center;
+}
+
+.background{
+  background-color: #f7f7ff;
+opacity: 1;
+background-image:  linear-gradient(#4852ff 0.5px, transparent 0.5px), linear-gradient(to right, #4852ff 0.5px, #f7f7ff 0.5px);
+background-size: 10px 10px;
+width: 90%;
+height: 90%;
+display: inline-block;
+padding: 5%;
+}
+.card{
+  padding: 2rem 1rem;
+  border:1px solid #4852ff;
+  background-color: white;
+  justify-content: center;
+  border-radius: 10px;
+  margin: auto;
+  width: fit-content;
+  vertical-align: center;
+  filter: drop-shadow(10px 10px 10px #b1b5ff);
+}
+
+.card h3{
+  text-align: center;
+  margin: .5rem;
+}
+
+.card img{
+  margin: auto;
+  display: block;
+}
+
+.pfp{
+  transition: 1s ease-in-out;
+}
+
+.card img:hover {
+  transform: rotate(360deg);
+}
+
+.links > a, .links > a:active, .links > a:visited{
+  border: 2px, solid, #4852ff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+}
+
+.links >a{
+  display: block;
+  padding: 5px 4rem;
+  margin: .75rem 1rem;
+  text-align: center;
+  transition: .3s ease-in-out;
+  border:1px solid white;
+  background-color: #4852ff;
+  color:white;
+}
+.links >a:hover, .links > a.active{
+  background-color: white;
+  border:1px solid #4852ff;
+  color: #4852ff;
+}
+
+.socialmedia{
+  display: flex;
+}
+
+.socialmedia > img{
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+.socialmedia > img:hover{
+  display: inline-block;
+  transform: scale(1.15);
+  margin-top: 1rem;
+  transition: .3s;
+}

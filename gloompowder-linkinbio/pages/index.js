@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import SocialMedia from '../components/SocialMedia'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,33 +18,28 @@ export default function Home() {
         <div className = "background">
           <div className = "card">
         <Image 
-              src="/gloomdiscord.png"
+              className = "pfp"
+              src="/peach in hand.svg"
               alt="Picture of the author"
               width={150}
               height={150}/>
-        <h4>@gloompowder</h4>
+        <h3>@gloompowder</h3>
         <SocialMedia />
         <div className ="links">
-          <a className='commissions'>
-            illustration commisions coming soon
+          <a href="https://www.instagram.com/willdoodleforcash/" className='commissions' target="_blank" rel="noreferer">
+            commission illustration 
           </a>
-          <a>
-            email
-          </a>
-          <a>
+          <a href="https://willlin1996.wixsite.com/portfolio" target="_blank" rel="noreferer">
             graphic design
           </a>
-          <a>
-            shop
+          <a href="https://gloompowder.github.io" target="_blank" rel="noreferer">
+            software development
           </a>
-          <a>
-            food blog coming soon
+          <a href="https://redbubble.com/shop/gloompowder" target="_blank" rel="noreferer">
+            view merch
           </a>
-          <a>
-            bake shop coming soon
-          </a>
-          <a>
-            shop my closet!
+          <a href="contact" target = "_blank" rel="noreferer">
+            contact
           </a>
           </div>
         </div>

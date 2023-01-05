@@ -5,18 +5,18 @@ export default function SocialMedia(){
         <Image 
               src="/instagram.svg"
               alt="instagram icon"
-              width={75}
-              height={75}/>  
+              width={50}
+              height={50}/>  
         <Image 
               src="/mail.svg"
               alt="email icon"
-              width={75}
-              height={75}/>  
+              width={50}
+              height={50}/>  
         <Image 
               src="/redbubble.svg"
               alt="redbubble icon"
-              width={75}
-              height={75}/>
+              width={50}
+              height={50}/>
         </div>
     )
 }
