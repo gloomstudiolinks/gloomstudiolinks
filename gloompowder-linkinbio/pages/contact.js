@@ -13,6 +13,7 @@ export default function Contact() {
     return(<div className = "background">
     <div className = "card">
   <Image 
+          href="https://www.instagram.com/gloompowder/"
         className = "pfp"
         src="/peachheadset.svg"
         alt="Picture of the author"

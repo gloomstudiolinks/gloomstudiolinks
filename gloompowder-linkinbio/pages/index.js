@@ -26,7 +26,7 @@ export default function Home() {
         <h3>@gloompowder</h3>
         <SocialMedia />
         <div className ="links">
-          <a href="https://www.instagram.com/willdoodleforcash/" className='commissions' target="_blank" rel="noreferer">
+          <a href="https://www.instagram.com/studiogloom/" className='commissions' target="_blank" rel="noreferer">
             commission illustration 
           </a>
           <a href="https://willlin1996.wixsite.com/portfolio" target="_blank" rel="noreferer">
@@ -35,7 +35,7 @@ export default function Home() {
           <a href="https://gloompowder.github.io" target="_blank" rel="noreferer">
             software development
           </a>
-          <a href="https://redbubble.com/shop/gloompowder" target="_blank" rel="noreferer">
+          <a href="https://www.redbubble.com/people/Gloompowder/shop?asc=u&ref=account-nav-dropdown" target="_blank" rel="noreferer">
             view merch
           </a>
           <a href="contact" target = "_self" >
