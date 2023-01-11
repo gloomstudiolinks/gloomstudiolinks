@@ -4,6 +4,7 @@
   font-family: poppins;
 }
 
+
 .h3{
   display: block;
   text-align: center;
@@ -19,6 +20,11 @@ height: 90%;
 display: inline-block;
 padding: 5%;
 }
+
+.col {
+  display:inline-block;
+}
+
 .card{
   padding: 2rem 1rem;
   border:1px solid #4852ff;
@@ -70,6 +76,7 @@ padding: 5%;
   border:1px solid white;
   background-color: #4852ff;
   color:white;
+  border-radius: 5px;
 }
 .links >a:hover, .links > a.active{
   background-color: white;
@@ -83,14 +90,13 @@ padding: 5%;
 
 .socialmedia > img{
   display: inline-block;
-  margin-top: 1.5rem;
   margin-bottom: .5rem;
 }
 .socialmedia > img:hover{
   display: inline-block;
   transform: scale(1.15);
-  margin-top: 1rem;
   transition: .3s;
+  cursor:pointer;
 }
 
 .back-button{  
@@ -102,6 +108,8 @@ padding: 5%;
   border: 1px solid white;
   text-decoration: none;
   transition: .3s ease-in-out;
+  justify-self: left;
+  border-radius:5px;
 }
 
 .back-button:hover{
@@ -113,7 +121,9 @@ padding: 5%;
 }
 
 .buttons{
-  display: flex;
+  display: block;
+  justify-content: space-between;
+  padding: .4rem;
 }
 
 .submit-button{
@@ -125,9 +135,16 @@ padding: 5%;
   font-size: medium;
   border: 1px solid white;
   transition: .3s ease-in-out;
-  align-self: flex-end;
+  float: right;
+  border-radius: 5px;
 }
 
+label{
+  display:block;
+  padding-left:1rem;
+  font-size: small;
+  font-weight: 600;
+}
 .submit-button:hover{
   color:#4852ff;
   background-color: white;
@@ -142,4 +159,104 @@ h4{text-align: center;}
   padding:.4rem;
   border-radius: 5px;
   border: 1px solid #4852ff;
+  display: block;
+}
+.form-control-II{
+  border: 1px solid #4852ff;
+  border-radius: 5px;
+}
+
+.contact-msg{
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  resize: none;
+}
+
+.form-group-II{
+  padding:.25rem .5rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .socialmedia{
+    background: white;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .contact-msg{
+    color: white;
+  }
+  .form-row-I, .form-row-II{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  .form-row-I{
+    padding-top: 1rem;
+  }
+
+  .form-group-II{
+    background-color: white;
+    padding:.25rem .5rem;
+
+  }
+  .col{
+    align-self: center;
+  }
+  h3{
+    color: white;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+  .card{
+    margin: auto;
+    border-radius: 0;
+    border:none;
+    width: 100vw;
+    filter: none;
+    padding: 0;
+    background-color: #4852ff;
+    padding-top: 2rem;
+  }
+  .card-II{
+    margin: auto;
+    border-radius: 0;
+    border:none;
+    width: 100vw;
+    filter: none;
+    padding: 0;
+    background-color: #4852ff;
+    padding-top: 2rem;
+  }
+  .background{
+    padding: 0;
+    margin: 0;
+  }
+  .textarea{resize: none;
+    cols: 20;}
+    .buttons{
+      background-color: white;
+    }
+    .buttons{
+      display: flex;
+      flex-direction:column;
+    }
+    .buttons button, .buttons a{
+      margin: .5rem;
+      width: 120px;
+      margin: auto;
+    }
+    .form-group-II{
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+/* .textarea{resize: none;
+  cols: 50;
+display:block} */
+
+.col-hidden{
+  display:none;
 }
