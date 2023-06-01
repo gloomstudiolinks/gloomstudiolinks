@@ -23,6 +23,7 @@ export default function Contact() {
         {/* <h4>no upcoming events</h4> */}
         <a className = "pridefair-link" href="https://www.elmfoundation.art/events-1/pride-fair" target="_blank" rel="noreferrer" alt="Pride Fair Link">           
         <Image 
+        alt="flyer"
               className = "studio-gloom-flyer"
               src="/pridefairlink.webp"
               width='100'
@@ -33,7 +34,7 @@ export default function Contact() {
                     Pride Fair
                 </p>
                 <p>What: Vending and Raffle</p>
-                <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=M3Z1ZjJpaHNiaTRyNnZhb2tvY2Q2Y3Q0a2Egd2lsbGxpbjE5OTZAbQ&amp;tmsrc=willlin1996%40gmail.com">
+                <a target="_blank" rel="noreferrer" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=M3Z1ZjJpaHNiaTRyNnZhb2tvY2Q2Y3Q0a2Egd2lsbGxpbjE5OTZAbQ&amp;tmsrc=willlin1996%40gmail.com">
                 <p>Where: Brooklyn, 191 N 14th St, Brooklyn, NY 11249, USA</p>
                 <p>When: Jun 10, 12:00 PM – Jun 11, 6:00 PM</p>
                 </a>
