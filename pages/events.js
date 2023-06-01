@@ -66,7 +66,7 @@ alt='under construction'
         <div className = "EventsDiv">
         <h1>Past Events</h1>
         <div className="Eventspair">
-        <a className = "lgbtcenter-link" href="https://gaycenter.org/trans-love/" target="_blank" rel="norefferer" alt="Trans Love Pop Up Link">           
+        <a className = "lgbtcenter-link" href="https://gaycenter.org/trans-love/" target="_blank" rel="noreferrer" alt="Trans Love Pop Up Link">           
         <Image 
               className = "studio-gloom-flyer"
               src="/studio-gloom-flyer.png"
