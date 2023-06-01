@@ -21,7 +21,7 @@ export default function Contact() {
         <div className = "Eventsdiv">
         <h1>Upcoming Events</h1>
         {/* <h4>no upcoming events</h4> */}
-        <a className = "pridefair-link" href="https://www.elmfoundation.art/events-1/pride-fair" target="_blank" rel="norefferer" alt="Pride Fair Link">           
+        <a className = "pridefair-link" href="https://www.elmfoundation.art/events-1/pride-fair" target="_blank" rel="noreferrer" alt="Pride Fair Link">           
         <Image 
               className = "studio-gloom-flyer"
               src="/pridefairlink.webp"
