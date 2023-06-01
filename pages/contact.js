@@ -15,8 +15,8 @@ export default function Contact() {
   <Image 
           href="https://www.instagram.com/gloompowder/"
         className = "pfp"
-        src="/peachheadset.svg"
-        alt="Picture of the author"
+        src="/gloomstudiologo.png"
+        alt="@studiogloom logo"
         width={150}
         height={150}/>
   <h3>@gloompowder</h3>

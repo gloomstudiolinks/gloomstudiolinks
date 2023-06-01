@@ -19,24 +19,27 @@ export default function Home() {
           <div className = "card">
         <Image 
               className = "pfp"
-              src="/peach in hand.svg"
-              alt="Picture of the author"
+              src="/gloomstudiologo.png"
+              alt="@studiogloom logo"
               width={150}
               height={150}/>
         <h3>@gloompowder</h3>
         <SocialMedia />
         <div className ="links">
-          <a href="https://www.instagram.com/studiogloom/" className='commissions' target="_blank" rel="noreferer">
-            commission illustration 
+        <a href="events" target = "_self" >
+            events
           </a>
-          <a href="https://willlin1996.wixsite.com/portfolio" target="_blank" rel="noreferer">
+          <a href="https://www.studiogloom.shop/" target="_blank" rel="noreferrer">
+            online shop
+          </a>
+          <a href="https://www.instagram.com/studiogloom/" className='commissions' target="_blank" rel="noreferrer">
+            commissions
+          </a>
+          <a href="https://willlin1996.wixsite.com/portfolio" target="_blank" rel="noreferrer">
             graphic design
           </a>
-          <a href="https://gloompowder.github.io" target="_blank" rel="noreferer">
+          <a href="https://gloompowder.github.io" target="_blank" rel="noreferrer">
             software development
-          </a>
-          <a href="https://www.redbubble.com/people/Gloompowder/shop?asc=u&ref=account-nav-dropdown" target="_blank" rel="noreferer">
-            view merch
           </a>
           <a href="contact" target = "_self" >
             contact
