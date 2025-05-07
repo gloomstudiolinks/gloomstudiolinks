@@ -38,7 +38,7 @@ export default function Home() {
           <a href="https://willlin1996.wixsite.com/portfolio" target="_blank" rel="noreferrer">
             graphic design
           </a>
-          <a href="https://gloompowder.github.io" target="_blank" rel="noreferrer">
+          <a href="https://willportfolio.vercel.app" target="_blank" rel="noreferrer">
             software development
           </a>
           <a href="contact" target = "_self" >
