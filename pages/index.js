@@ -23,23 +23,24 @@ export default function Home() {
               alt="@studiogloom logo"
               width={150}
               height={150}/>
-        <h3>@gloompowder</h3>
+        <h3>@studiogloom</h3>
         <SocialMedia />
         <div className ="links">
-        <a href="events" target = "_self" >
+          <a href="https://forms.gle/piRhUgc1Xke3nLjM8" target="_blank" rel="noreferrrer">LES June Vendor Application</a>
+        {/* <a href="/events" target = "_self" >
             events
-          </a>
-          <a href="https://www.studiogloom.shop/" target="_blank" rel="noreferrer">
+          </a> */}
+          {/* <a href="https://www.studiogloom.shop/" target="_blank" rel="noreferrer">
             online shop
-          </a>
-          <a href="https://www.instagram.com/studiogloom/" className='commissions' target="_blank" rel="noreferrer">
+          </a> */}
+          {/* <a href="https://www.instagram.com/studiogloom/" className='commissions' target="_blank" rel="noreferrer">
             commissions
+          </a> */}
+                    <a href="https://willportfolio.vercel.app" target="_blank" rel="noreferrer">
+            software development
           </a>
           <a href="https://willlin1996.wixsite.com/portfolio" target="_blank" rel="noreferrer">
             graphic design
-          </a>
-          <a href="https://willportfolio.vercel.app" target="_blank" rel="noreferrer">
-            software development
           </a>
           <a href="contact" target = "_self" >
             contact
