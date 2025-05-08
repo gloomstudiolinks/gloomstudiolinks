@@ -2,17 +2,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import SocialMedia from '../components/SocialMedia'
+import DeadlineBanner from '../components/DeadlineBanner';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
+    <DeadlineBanner/>
       <Head>
         <title>Gloompowder Links</title>
         <meta name="description" content="Gloompowder's Links" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/gloomstudiologo.png"/>
       </Head>
       <main>
         <div className = "background">
@@ -26,10 +29,10 @@ export default function Home() {
         <h3>@studiogloom</h3>
         <SocialMedia />
         <div className ="links">
-          <a href="https://forms.gle/piRhUgc1Xke3nLjM8" target="_blank" rel="noreferrrer">LES June Vendor Application</a>
-        {/* <a href="/events" target = "_self" >
+          <a href="https://forms.gle/piRhUgc1Xke3nLjM8" target="_blank" rel="noreferrrer">LES June Vendor Application </a>
+        <a href="/events" target = "_self" >
             events
-          </a> */}
+          </a>
           {/* <a href="https://www.studiogloom.shop/" target="_blank" rel="noreferrer">
             online shop
           </a> */}

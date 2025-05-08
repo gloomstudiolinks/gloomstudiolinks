@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { useState } from "react";
+import styles from '../styles/contact.module.css'
+import DeadlineBanner from '../components/DeadlineBanner';
+
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -12,6 +15,7 @@ export default function Contact() {
 
   return (
     <div className="background">
+      <DeadlineBanner/>
       <div className="card">
         <Image
           href="https://www.instagram.com/gloompowder/"
@@ -109,6 +113,7 @@ export default function Contact() {
                 name="message"
                 className="form-control-II"
                 rows="8"
+                cols="48"
                 placeholder="Your Message"
                 required
                 value={message}

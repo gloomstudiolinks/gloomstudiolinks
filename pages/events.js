@@ -1,44 +1,16 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { useState } from "react";
+import events from '../components/Events';
+import DeadlineBanner from '../components/DeadlineBanner';
+
 
 export default function Contact() {
   const imageStyle = { width: '100%', height: 'auto' };
 
-  // Define your events with date objects
-  const events = [
-    {
-      id: 'pridefair',
-      title: 'Pride Fair',
-      what: 'Vending and Raffle',
-      imageSrc: '/pridefairlink.webp',
-      imageAlt: 'Pride Fair Flyer',
-      eventLink: 'https://www.elmfoundation.art/events-1/pride-fair',
-      location: {
-        text: 'Brooklyn, 191 N 14th St, Brooklyn, NY 11249, USA',
-        link: 'https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=M3Z1ZjJpaHNiaTRyNnZhb2tvY2Q2Y3Q0a2Egd2lsbGxpbjE5OTZAbQ&amp;tmsrc=willlin1996%40gmail.com'
-      },
-      dateStart: new Date(2025, 5, 10, 12, 0),
-      dateEnd: new Date(2025, 5, 11, 18, 0),
-    },
-    {
-      id: 'translove',
-      title: 'Trans Love Pop Up',
-      what: 'First In-person Vendor/Grand Opening',
-      imageSrc: '/studio-gloom-flyer.png',
-      imageAlt: 'Trans Love Pop Up Flyer',
-      eventLink: 'https://gaycenter.org/trans-love/',
-      location: {
-        text: '208 W 13 St New York, NY 10011',
-        link: 'https://goo.gl/maps/R7WoZ1hHMKTsk9Tu9'
-      },
-      dateStart: new Date(2023, 2, 31, 12, 0),
-    }
-  ];
-
   const today = new Date();
   const upcomingEvents = events.filter(e => e.dateStart >= today);
-  const pastEvents     = events.filter(e => e.dateStart < today);
+  const pastEvents = events.filter(e => e.dateStart < today);
 
   const formatDateRange = (start, end) => {
     const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
@@ -53,15 +25,15 @@ export default function Contact() {
 
   return (
     <div className="background">
+        <DeadlineBanner/>
       <div className="card">
         {/* Logo and Tag */}
         <a href="https://www.instagram.com/studiogloom/" target="_blank" rel="noreferrer">
           <Image className="pfp" src="/gloomstudiologo.png" alt="@studiogloom logo" width={150} height={150} />
         </a>
         <a href="https://www.instagram.com/studiogloom/" target="_blank" rel="noreferrer">
-          <h3>@studiogloom </h3>
         </a>
-
+        <h3>@studiogloom</h3>
         <Link href="/">
           <button className="back-button">Back</button>
         </Link>
