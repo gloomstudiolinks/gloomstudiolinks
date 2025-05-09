@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaWhatsapp, FaCalendarPlus, FaApple, FaTicketAlt } from 'react-icons/fa';
 import styles from '../styles/LESJuneVend.module.css';
@@ -60,10 +61,10 @@ return (
     
     <div className={styles.container}>
       <div className={styles.hero}>
-        <a href="/" rel="noreferrer">
+        <Link href="/" rel="noreferrer">
         
         <div className={styles.eventBadge}>Back</div>
-        </a>
+        </Link>
         <h1>{eventTitle}</h1>
         
         <h4 className={styles.subtitle}>June 21, 2025, 12pm-6pm</h4>
@@ -79,32 +80,32 @@ return (
           ))}
         </div>
         <div className={styles.ctaContainer}>
-          <a href="https://partiful.com/e/nsgGfSDBzCnvK1Pe7CN6" target="_blank" rel="noreferrer" className={styles.ctaButton}>
+          <Link href="https://partiful.com/e/nsgGfSDBzCnvK1Pe7CN6" target="_blank" rel="noreferrer" className={styles.ctaButton}>
             <FaTicketAlt /> RSVP
-          </a>
+          </Link>
           <div className={styles.buttonGroup}>
-            <a rel="noreferrer" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NWo4bzVlcmZtdDQ2dWdzbG9mOGR2MGdnZDggZ2xvb21zdHVkaW9saW5rc0Bt&tmsrc=gloomstudiolinks%40gmail.com">            
+            <Link rel="noreferrer" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NWo4bzVlcmZtdDQ2dWdzbG9mOGR2MGdnZDggZ2xvb21zdHVkaW9saW5rc0Bt&tmsrc=gloomstudiolinks%40gmail.com">            
               <button className={styles.calendarButton}>
               <FaCalendarPlus /> Calendar
             </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.socialShare}>
         <div className={styles.socialIcons}>
         <div className={styles.socialIcons}>
-            <a href={socialLinks.facebook} target="_blank" rel="noreferrer" className={styles.facebook}>
+            <Link href={socialLinks.facebook} target="_blank" rel="noreferrer" className={styles.facebook}>
               <FaFacebookF />
-            </a>
-            <a href={socialLinks.twitter} target="_blank" rel="noreferrer" className={styles.twitter}>
+            </Link>
+            <Link href={socialLinks.twitter} target="_blank" rel="noreferrer" className={styles.twitter}>
               <FaTwitter />
-            </a>
-            <a href={socialLinks.linkedin} target="_blank" rel="noreferrer" className={styles.linkedin}>
+            </Link>
+            <Link href={socialLinks.linkedin} target="_blank" rel="noreferrer" className={styles.linkedin}>
               <FaLinkedinIn />
-            </a>
-            <a href={socialLinks.whatsapp} target="_blank" rel="noreferrer" className={styles.whatsapp}>
+            </Link>
+            <Link href={socialLinks.whatsapp} target="_blank" rel="noreferrer" className={styles.whatsapp}>
               <FaWhatsapp />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
