@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import SocialMedia from '../components/SocialMedia'
 import DeadlineBanner from '../components/DeadlineBanner';
+import Link from 'next/link';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -29,25 +30,25 @@ export default function Home() {
         <h3>@studiogloom</h3>
         <SocialMedia />
         <div className ="links">
-          <a href="https://forms.gle/piRhUgc1Xke3nLjM8" target="_blank" rel="noreferrrer">LES June Vendor Application </a>
-        <a href="/events" target = "_self" >
+          <Link href="https://forms.gle/piRhUgc1Xke3nLjM8" target="_blank" rel="noreferrer">LES June Vendor Application </Link>
+        <Link href="/events" target = "_self" >
             events
-          </a>
-          {/* <a href="https://www.studiogloom.shop/" target="_blank" rel="noreferrer">
+          </Link>
+          {/* <Link href="https://www.studiogloom.shop/" target="_blank" rel="noreferrer">
             online shop
-          </a> */}
-          {/* <a href="https://www.instagram.com/studiogloom/" className='commissions' target="_blank" rel="noreferrer">
+          </Link> */}
+          {/* <Link href="https://www.instagram.com/studiogloom/" className='commissions' target="_blank" rel="noreferrer">
             commissions
-          </a> */}
-                    <a href="https://willportfolio.vercel.app" target="_blank" rel="noreferrer">
+          </Link> */}
+                    <Link href="https://willportfolio.vercel.app" target="_blank" rel="noreferrer">
             software development
-          </a>
-          <a href="https://willlin1996.wixsite.com/portfolio" target="_blank" rel="noreferrer">
+          </Link>
+          <Link href="https://willlin1996.wixsite.com/portfolio" target="_blank" rel="noreferrer">
             graphic design
-          </a>
-          <a href="contact" target = "_self" >
+          </Link>
+          <Link href="contact" target = "_self" >
             contact
-          </a>
+          </Link>
           </div>
         </div>
         </div>
