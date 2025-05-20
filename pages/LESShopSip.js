@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaWhatsapp, FaCalendarPlus, FaApple, FaTicketAlt } from 'react-icons/fa';
+import { FaBluesky } from "react-icons/fa6";
 import styles from '../styles/LESJuneVend.module.css';
 
 const EventPage = () => {
@@ -45,7 +46,9 @@ const EventPage = () => {
 
 
   const socialLinks = {
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(eventUrl)}`,
+    bluesky: `https://bsky.app/intent/compose?${new URLSearchParams({
+      text: `${shareText} ${eventUrl}`
+    })}`,
     twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${shareText} ${eventUrl}`)}`,
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(eventUrl)}&title=${encodeURIComponent(eventTitle)}&summary=${encodeURIComponent(shareText)}`,
     whatsapp: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${shareText} ${eventUrl}`)}`
@@ -65,12 +68,12 @@ return (
         
         <div className={styles.eventBadge}>Back</div>
         </Link>
-        <h1>{eventTitle}</h1>
+        <h1 className={styles.eventHeader}>{eventTitle}</h1>
         
         <h4 className={styles.subtitle}>June 21, 2025, 12pm-6pm</h4>
         <h4 className={styles.subtitle}>The Monroe Café, 49 Monroe St, New York, NY 10002</h4>
-        {/* <p>Get ready for a sun-soaked afternoon of local makers, coffee, and community!
-        LES Vend brings together a curated lineup of artisans—think handcrafted jewelry, indie zines, specialty treats, and more—right inside The Monroe Café on the Lower East Side. Whether you’re hunting for the perfect gift or just want to support NYC’s vibrant queer-friendly maker scene, you’ll find something to love.</p> */}
+        <p className={styles.summary}>
+        LES Vend brings together a curated lineup of artisans—think handcrafted jewelry, indie zines, specialty treats, and more—right inside The Monroe Café on the Lower East Side. Whether you’re hunting for the perfect gift or just want to support NYC’s vibrant maker scene, you’ll find something to love!</p>
         <div className={styles.countdown}>
           {Object.entries(timeLeft).map(([unit, value]) => (
             <div key={unit} className={styles.timeBlock}>
@@ -84,7 +87,7 @@ return (
             <FaTicketAlt /> RSVP
           </Link>
           <div className={styles.buttonGroup}>
-            <Link rel="noreferrer" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NWo4bzVlcmZtdDQ2dWdzbG9mOGR2MGdnZDggZ2xvb21zdHVkaW9saW5rc0Bt&tmsrc=gloomstudiolinks%40gmail.com">            
+            <Link rel="noreferrer" target="_blank" href="https://calendar.app.google/EG3tx5WvVc8NK6949">            
               <button className={styles.calendarButton}>
               <FaCalendarPlus /> Calendar
             </button>
@@ -94,8 +97,8 @@ return (
         <div className={styles.socialShare}>
         <div className={styles.socialIcons}>
         <div className={styles.socialIcons}>
-            <Link href={socialLinks.facebook} target="_blank" rel="noreferrer" className={styles.facebook}>
-              <FaFacebookF />
+            <Link href={socialLinks.bluesky} target="_blank" rel="noreferrer" className={styles.bluesky}>
+            <FaBluesky />
             </Link>
             <Link href={socialLinks.twitter} target="_blank" rel="noreferrer" className={styles.twitter}>
               <FaTwitter />

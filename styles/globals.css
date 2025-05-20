@@ -67,6 +67,8 @@ padding: 5%;
   border: 2px, solid, #4852ff;
   text-decoration: none;
   text-align: center;
+  border-radius: 5px;
+  border:1px solid white;
 }
 
 .links{

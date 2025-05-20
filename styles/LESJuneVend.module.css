@@ -27,7 +27,7 @@
   text-align: center;
   margin: 1rem 0;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
@@ -52,6 +52,12 @@
   filter: drop-shadow(10px 10px 10px #b1b5ff);
 }
 
+.summary { 
+  text-align: center;
+  font-size: small;
+  color:#909090;
+}
+
 .eventBadge {
   background: #4852ff;
   color: white;
@@ -64,10 +70,15 @@
   width: fit-content;
 }
 
+.eventHeader {
+  font-weight: 1000;
+}
 .subtitle {
   color: #666;
   text-align: center;
   margin-bottom: .5rem;
+  font-weight: 800;
+  font-size: larger;
 }
 
 .countdown {

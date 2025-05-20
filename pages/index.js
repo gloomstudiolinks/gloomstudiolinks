@@ -30,7 +30,7 @@ export default function Home() {
         <h3>@studiogloom</h3>
         <SocialMedia />
         <div className ="links">
-          <Link href="https://forms.gle/piRhUgc1Xke3nLjM8" target="_blank" rel="noreferrer">LES June Vendor Application </Link>
+          <Link href="/LESShopSip" target="_blank" rel="noreferrer">LES Shop + Sip </Link>
         <Link href="/events" target = "_self" >
             events
           </Link>
